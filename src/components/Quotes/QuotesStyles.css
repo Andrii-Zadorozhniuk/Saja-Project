@@ -1,0 +1,39 @@
+.quotes-section {
+    padding-bottom: 10rem;
+    width: 60%;
+    margin: auto;
+    padding-top: 10rem;
+}
+
+.swiper-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    row-gap: 20px;
+}
+.swiper-item h3 {
+    text-align: center;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+}
+.swiper-item h1 {
+    text-align: center;
+}
+.swiper-item p {
+    text-align: center;
+    color: gray;
+}
+.swiper-item img {
+    border-radius: 50%;
+}
+.swiper-item .fa {
+    font-size: 3.5rem;
+    color: #ef0454;
+}
+@media (max-width: 900px) {
+    .quotes-section {
+        width: 90%;
+    }
+}

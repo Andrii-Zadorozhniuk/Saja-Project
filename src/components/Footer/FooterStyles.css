@@ -1,0 +1,83 @@
+footer {
+    width: 100%;
+    background-color: #161616;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 4rem;
+    padding: 5rem;
+}
+footer li {
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+footer a {
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+}
+footer a:hover {
+    color:white;
+}
+
+footer section:nth-child(1) h4 {
+    margin-top: 15px;
+}
+footer section:nth-child(2) a, footer section:nth-child(3) a {
+    margin-top: 15px;
+}
+
+
+
+.newsletter-input {
+    background-color: #232323;
+    color: #878787;
+    padding: 1rem;
+    position: relative;
+    margin-top: 1rem;
+    border-radius: 6px;
+    width: 100%;
+}
+.newsletter-input input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: #878787;
+    font-size: 15px;
+}
+.newsletter-input .fa {
+    position: absolute;
+    top: 37%;
+    right: 23px;
+}
+
+footer section:nth-child(4) button {
+    background-color: #ef0454;
+    border: none;
+    color: white;
+    padding: 1.3rem 1.2rem;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.368);
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    margin-top: 1.4rem;
+}
+
+
+@media (max-width: 1050px) {
+    footer {
+        grid-template-columns: repeat(2, auto);
+        row-gap: 40px;
+        padding: 4rem 2rem;
+    }
+}
+@media (max-width: 650px) {
+    footer {
+        grid-template-columns: repeat(1, auto);
+    }
+}

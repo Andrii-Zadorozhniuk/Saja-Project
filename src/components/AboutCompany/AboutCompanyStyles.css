@@ -1,0 +1,216 @@
+.about-company {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 8rem;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+}
+.about-company .images {
+    position: relative;
+}
+.about-company .img1 {
+    position: absolute;
+    left: 8.4rem;
+    bottom: -6rem;
+    z-index: 9;
+}
+.about-company .img2 {
+    margin-right: 20px;
+}
+.triangle1 {
+    position: absolute;
+    top: -10px;
+    right: -3rem;
+    z-index: 999;
+    animation: spin 5s infinite;
+}
+.about-company .img1, .img2 {
+    border-radius: 10px;
+}
+.about-company .about-company-text-container {
+    width: 45%;
+}
+.about-company-text-container span {
+    color: #ef0454;
+    font-weight: 800;
+}
+.about-company-text-container h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.2;
+    padding-top: 1rem;
+}
+.about-company-text-container p {
+    padding-top: 1rem;
+    color: rgb(65, 65, 65)
+}
+.about-company-text-container button {
+    background-color: #ef0454;
+    border: none;
+    color: white;
+    padding: 1.1rem 1.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.368);
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 1.6rem;
+}
+.about-company-text-container button:hover {
+    background-color: #b7013d;
+    transform: translateY(2px);
+}
+.about-company-text-container span::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    background-color: #ef0454;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left:-2rem;
+    z-index: -1;
+    animation: moveTopBottom 5s infinite; 
+    animation-timing-function: ease;
+    transform-origin: center;
+}
+
+@media (max-width: 1200px){
+    .about-company {
+        flex-direction: column;
+    }
+    .about-company .about-company-text-container {
+        width: 90%;
+        padding-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-company-text-container button {
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .about-company .about-company-text-container h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .about-company-text-container p {
+        text-align: center;
+    }
+    .about-company .images {
+        justify-content: center;
+        display: flex;
+        transform: translateX(-35px);
+    }
+    .about-company .img1 {
+        position: absolute;
+        left: 8.4rem;
+        bottom: -6rem;
+        z-index: 9;
+    }
+    .triangle1 {
+        right: -3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-company .img1 {
+        width: 90%;
+        left: 30px;
+        top: 40px;
+    }
+    .about-company .img2 {
+        width: 90%;
+    }
+    .about-company .about-company-text-container {
+        padding-top: 8rem;
+    }
+    .about-company .images {
+        padding-right: 0;
+        transform: translateX(0);
+    }
+    .triangle1 {
+       display: none;
+    }
+}
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes moveTopBottom {
+    0%{
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+
+
+
+
+
+
+.about-company-full {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.scroll-trigger {
+    padding-top: 12rem;
+    width: 80%;
+}
+.numbers {
+    display: flex;
+    justify-content: space-between;
+}
+.numbers .number h1 {
+    font-size: 3.2rem;
+    text-align: center;
+}
+.numbers .number p {
+    color:rgb(65, 65, 65);
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .scroll-trigger {
+        width: 60%;
+        padding-top: 6rem;
+    }
+    .numbers {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .numbers {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        row-gap: 40px;
+        justify-content: center;
+    }
+}

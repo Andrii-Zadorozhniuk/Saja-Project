@@ -1,0 +1,33 @@
+.hero-about-section {
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(90deg,#1b1a1a ,#434343);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-about-section h1 {
+    color: white;
+    font-size: 5rem;
+}
+.hero-about-section p {
+    color: white;
+    font-size: 1.2rem;
+}
+.hero-about-section .home-link {
+    color: #ef0454;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .hero-about-section h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-height: 350px) {
+    .hero-about-section {
+        height: 90vh;
+    }
+}

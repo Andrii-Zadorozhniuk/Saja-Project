@@ -1,0 +1,155 @@
+.price-table {
+    padding: 3.5rem 5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.price-table h1 {
+    font-size: 4rem; 
+}
+.price-table span {
+    color: #ef0454;
+    font-weight: 800;
+    text-align: center;
+}
+.price-table span::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    background-color: #ef0454;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.price-table p {
+    color: gray;
+}
+
+
+.price-table .btns-radio {
+    background-color: rgb(242, 240, 240);
+    display: flex;
+    padding: 0.4rem;
+    border-radius: 25px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 30%;
+
+}
+.price-table .btns-radio button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+    width: 48%;
+    cursor: pointer;
+}
+.price-table .btns-radio .btn-on {
+    background-color: #ef0454;
+    color: white;
+}
+
+
+.price-plans {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-plan {
+    width: 32%;
+    background-color: rgb(255, 255, 255);
+    padding: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.price-plan h4 {
+    font-weight: 400;
+}
+.price-plan h2 {
+    color:#ef0454;
+    font-size: 3rem;
+}
+.price-plan h2 span {
+    color: black;
+    font-size: 1.5rem;
+}
+.price-plan h2 span::before {
+    content: none;
+}
+.price-plan ul {
+    list-style: none;
+}
+.price-plan ul li .fa {
+    color:#ef0454;
+    margin-right: 10px;
+}
+.price-plan ul li {
+    color: rgb(105, 104, 104);
+    text-align: left;
+    padding-top: 0.7rem;
+}
+.price-plan button {
+    margin-top: 1.4rem;
+    background-color: #ef0454;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.price-plan.premium {
+    background-color: #ef0454;
+    color: white;
+}
+.price-plan.premium h2 {
+    color: white;
+}
+.price-plan.premium h2 span {
+    color: white;
+}
+.price-plan.premium ul li  {
+    color: white;
+}
+.price-plan.premium ul li .fa {
+    color: white;
+}
+.price-plan.premium button {
+    background-color: black;
+}
+
+
+
+
+
+@media (max-width: 1050px) {
+    .price-table {
+        padding: 3.5rem 2rem;
+    }
+    .price-table h1 {
+        font-size: 2.2rem;
+    }
+    .price-table .btns-radio {
+        width: 55%;
+    }
+    .price-plans {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .price-plan {
+        width: 70%;
+    }
+}
+@media (max-width: 650px) {
+    .price-table .btns-radio {
+        width: 80%;
+    }
+    .price-plan {
+        width: 100%;
+    }
+}

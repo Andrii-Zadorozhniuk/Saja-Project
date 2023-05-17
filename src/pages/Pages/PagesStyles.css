@@ -1,0 +1,100 @@
+.web-business {
+    display: flex;
+    width: 92%;
+    margin: auto;
+    padding-top: 6rem;
+    column-gap: 30px;
+    padding-bottom: 3rem;
+}
+.our-work {
+    width: 70%;
+}
+.our-work img {
+    width: 100%;
+}
+.our-work p {
+    color: rgb(107, 107, 107);
+    margin-top: 2rem;
+}
+.our-work h2, h3 {
+    margin-top: 2rem;
+}
+.our-work ul {
+    list-style: none;
+    color: rgb(86, 86, 86);
+}
+.our-work ul li {
+    padding: 0.3rem 0;
+}
+.our-work ul li .fa {
+    color: #ef0454;
+    margin-right: 10px;
+}
+.our-work .offers {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    align-items: center;
+}
+.our-work .offers .offer-solution {
+    width: 48%;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+
+
+.side-info {
+    width: 30%;
+}
+.side-info-container {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 1rem 2.4rem;
+    border-radius: 10px;
+}
+.side-info-container span {
+    padding-top: 1.2rem;
+    display: block;
+    color: gray;
+    font-size: 15px;
+}
+.side-info-container p {
+    font-weight: 550;
+}
+.side-info button {
+    display: block;
+    text-transform:uppercase;
+    width: 100%;
+    border: none;
+    margin: 1rem 0rem;
+    border-radius: 10px;
+    padding: 1.2rem 0;
+    color: white;
+    cursor: pointer;
+}
+.side-info button:nth-child(2) {
+    background-color: #ef0454;
+}
+.side-info button:nth-child(3) {
+    background-color: black;
+}
+
+
+
+
+
+@media (max-width: 1050px) {
+    .web-business, .our-work .offers {
+        flex-direction: column;
+    }
+    .our-work, .side-info {
+        width: 100%;
+    }
+    .our-work .offers .offer-solution {
+        width: 95%;
+        margin-top: 1rem;
+    }
+    .side-info {
+        margin-top: 3rem;
+    }
+}

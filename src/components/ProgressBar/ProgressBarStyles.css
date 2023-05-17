@@ -1,0 +1,24 @@
+.progressbar-container {
+    position: relative;
+}
+.progressbar-container::after {
+    width: 8px;
+    border-radius: 10px;
+    height: 40px;
+    transform: rotate(20deg) translateY(-10px);
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ef0454;
+}
+.progressbar-precentage {
+    position: absolute;
+    top: -25px;
+    right: -50px;
+    font-weight: lighter;
+}
+.progressbar-label {
+    position: absolute;
+    top: -25px;
+    left: 0;
+}

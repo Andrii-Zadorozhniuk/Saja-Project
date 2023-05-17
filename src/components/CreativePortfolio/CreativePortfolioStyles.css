@@ -1,0 +1,116 @@
+.creative-portfolio {
+    margin-bottom: 2rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.creative-portfolio-text {
+    width: 50%;
+    margin: auto;
+}
+.creative-portfolio-text span {
+    color: #ef0454;
+    font-weight: 800;
+}
+.creative-portfolio-text h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.2;
+    padding-top: 1rem;
+    text-align: center;
+}
+.creative-portfolio-text p {
+    padding-top: 1rem;
+    color: gray;
+    text-align: center;
+}
+.creative-portfolio-text span::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    background-color: #ef0454;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+
+.portfolios {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+.portfolio {
+    width: 32%;
+    position: relative;
+    border-radius: 30px ;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+}
+.portfolio img {
+    width: 100%;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+.portfolio:hover div {
+    top: 0;
+}
+.portfolio:hover img {
+    transform: scale(1.15);
+}
+.portfolio div {
+    position: absolute;
+    top: 120%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    padding: 2rem 1.3rem;
+    background: linear-gradient(transparent, #a9033ab6);
+    transition: 0.3s;
+}
+.portfolio h3 {
+    margin: 0;
+}
+
+.creative-portfolio .view-btn {
+    border: 1px solid #ef0454;
+    color: #ef0454;
+    padding: 1.2rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 4rem;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.creative-portfolio .view-btn:hover {
+    background-color: #ef0454;
+    color: white;
+
+}
+
+
+
+@media (max-width: 900px) {
+    .portfolios {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .portfolio {
+        width: 90%;
+    }
+    .creative-portfolio-text {
+        width: 90%;
+    }
+}

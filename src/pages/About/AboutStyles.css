@@ -1,0 +1,67 @@
+.about-video-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://saja-react.vercel.app/assets/img/about/video-bg.jpg");
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about-video-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    row-gap: 50px;
+    width: 80%;
+}
+.about-video-text h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.about-video-text button {
+    color: black;
+    background-color:white;
+    border: none;
+    box-shadow: 0 0 0 20px rgba(220, 220, 220, 0.196);
+    border-radius: 50%;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    animation: VideoBtn 3s infinite;
+}
+
+
+
+@keyframes VideoBtn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .about-video-text h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .about-video-text {
+        width: 95%;
+    }
+    .about-video-text h1 {
+        font-size: 2rem;
+    }
+}
